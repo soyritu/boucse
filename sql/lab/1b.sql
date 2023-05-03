@@ -48,7 +48,7 @@ values (171,113,2018,'D');
 select * from enroll;
 
 select studentid, count(grade) from enroll 
-where enrollyear=2019 and ( grade = 'B' or grade like 'A_') 
+where enrollyear=2019 and ( grade = 'B' or grade like 'A%') 
 group by studentid 
 having count(grade) >= 2;
 
