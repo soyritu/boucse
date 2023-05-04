@@ -34,6 +34,7 @@ insert into player values(12,2,'z',3,4,'01-JAN-2004');
 select team_name,best_player from football_team f,saff_football s
 	where f.team_id = s.team_id
 	order by trophy_year desc;
+--c
 select player_name from player
 	where team_id = (select team_id from football_team
     							where team_name = 'bangladesh');
